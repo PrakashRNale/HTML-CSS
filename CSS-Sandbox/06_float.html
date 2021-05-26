@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float and clear</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .container{
+            width: 1000px;
+            margin: auto;
+        }
+        #box1{
+            background-color: lightgray;
+            padding: 20px;
+            border: 1px solid black;
+        }
+        #box2{
+            background-color: lightgray;
+            padding: 20px;
+            border: 1px solid black;
+            width: 50%;
+            float: left;
+            
+        }
+        #box3{
+            background-color: lightgray;
+            padding: 20px;
+            border: 1px solid black;
+            width: 30%;
+            float: right;
+        }
+        #box4{
+            background-color: lightgray;
+            padding: 20px;
+            border: 1px solid black;
+        }
+        .clr{
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">    
+        <div id="box1">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni non voluptates soluta dignissimos odit deserunt nostrum odio distinctio nesciunt illo.</p>
+        </div>
+        <div id="box2">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni non voluptates soluta dignissimos odit deserunt nostrum odio distinctio nesciunt illo.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni non voluptates soluta dignissimos odit deserunt nostrum odio distinctio nesciunt illo.</p>
+        </div>
+        <div id="box3">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni non voluptates soluta dignissimos odit deserunt nostrum odio distinctio nesciunt illo.</p>
+        </div>
+        <div class="clr"></div>
+        <div id="box4">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni non voluptates soluta dignissimos odit deserunt nostrum odio distinctio nesciunt illo.</p>
+        </div>
+    </div>
+    
+</body>
+</html>

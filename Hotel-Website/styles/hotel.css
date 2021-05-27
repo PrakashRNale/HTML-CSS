@@ -155,7 +155,7 @@ a {
 /* Home Info */
 
 #home-info {
-  height: 400px;
+  height: 500px;
 }
 
 #home-info .home-info {
@@ -216,7 +216,7 @@ a {
   background-image: url("/Hotel-Website/images/test-bg.jpg");
   background-size: cover;
   background-position: center center;
-  height: 600px;
+  height: 100%;
   padding-top: 100px;
 }
 

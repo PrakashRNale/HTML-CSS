@@ -1,0 +1,52 @@
+#navbar h1 {
+  float: none;
+  text-align: center;
+}
+
+#navbar ul {
+  float: none;
+}
+
+#navbar ul li {
+  float: none;
+  text-align: center;
+}
+
+#navbar ul li a {
+  padding: 5px;
+  border-bottom: 1px dotted gray;
+}
+
+/* We don't want to show image on small device
+so we are hiding it.
+if we want to show, just uncomment follwoing code */
+#home-info .home-info {
+  display: none;
+  /* float: none;
+  width: 100%;
+  min-height: 50%; */
+}
+#home-info .home-content {
+  float: none;
+  width: 100%;
+  /* min-height: 50%; */
+}
+
+.box {
+  float: none;
+  width: 100%;
+}
+
+/* About */
+
+.info-left,
+.info-right {
+  width: 100%;
+  float: none;
+}
+
+/* Contact */
+
+#contact-info .box {
+  border-bottom: gray 2px dotted;
+}

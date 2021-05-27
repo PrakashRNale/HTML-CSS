@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+    <style>
+        body{
+            padding-left: 40%;
+            padding-top: 100px;
+            background-color: gray;
+        }
+        h1{
+            display: none;
+        }
+
+        /* For mobile devices */
+        @media(max-width : 500px){
+            body{
+                background-color: red;  
+                padding-left: 20%;              
+            }
+            .smartPhones {
+                display: block;
+            }
+        }
+
+        /* Tablets */
+
+        @media(min-width : 501px) and (max-width : 768px){
+            body{
+                background-color: blue;
+                padding-left: 30%;
+            }
+
+            .tablet{
+                display: block;
+            }
+        }
+
+        /* Normal Devices */
+        @media (min-width : 768px) and (max-width : 1200px){
+            body{
+                background-color: green;
+                padding-left: 40%;
+            }
+
+            .normalScreen{
+                display: block;
+            }
+        }
+          
+        @media(min-width : 1200px){
+            body{
+                background-color: black;
+                color: white;
+                padding-left: 40%;
+            }
+
+            .widerscreen{
+                display: block;
+            }
+        }
+
+        /* Landscape */
+
+        @media(max-height : 500px){
+            body{
+                background-color: pink;
+                padding-left: 40%;
+            }
+
+            .landscape{
+                display: block;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <h1 class="smartPhones">SmartPhones</h1>
+    <h1 class="tablet">Tablet</h1>
+    <h1 class="normalScreen">NormalScreen</h1>
+    <h1 class="widerscreen">Widerscreen</h1>
+    <h1 class="landscape">Landscape</h1>    
+
+</body>
+</html>

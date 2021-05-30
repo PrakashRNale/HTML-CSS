@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* All elements inside an element */
+        div p{
+            background: skyblue;
+        }
+
+        /* Direct Child of a parent element */
+
+        div > p{
+            background-color: gray;
+        }
+
+        /* Directly after this element */
+
+        div + p{
+            background-color: black;
+            color: white;
+        }
+
+        /* Attribute selectors */
+        a[target]{
+            background: lightskyblue;
+        }
+
+        a[target="_self"]{
+            background-color: lightgray;
+        }
+
+    </style>
+    <title>Targeted Selectors</title>
+</head>
+<body>
+    <div>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim, eligendi.</p>
+        <ul>
+            <li>Item1</li>
+            <li>Item2</li>
+            <li><p>Item3</p> </li>
+            <li>Item4</li>
+            <li>Item5</li>
+        </ul>
+        <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, natus?</p>
+
+    <div>
+        <a href="">Read more</a>
+        <a href="" target="_self">Read more</a>
+        <a href="http://www.google.com" target="_blank">Google</a>
+    </div>
+
+</body>
+</html>

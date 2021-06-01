@@ -1,0 +1,60 @@
+@import "variables";
+@import "functions";
+
+body {
+  background-color: $primary-color;
+}
+
+header {
+  background-color: $dark-color;
+  color: set-text-color(#000);
+
+  h1 {
+    text-align: center;
+  }
+}
+
+.section {
+  padding: 3rem;
+  h3 {
+    font-size: 2rem;
+  }
+
+  &-a {
+    background-color: $light-color;
+    color: set-text-color($light-color);
+  }
+
+  &-b {
+    background-color: $dark-color;
+    color: set-text-color($dark-color);
+  }
+}
+
+%btn-shared {
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn {
+  &-light {
+    @extend %btn-shared;
+    background-color: $primary-color;
+    color: set-text-color($primary-color);
+
+    &:hover {
+      @include transform(rotate(20deg));
+    }
+  }
+
+  &-dark {
+    @extend %btn-shared;
+    background-color: $secondary-color;
+    color: set-text-color($secondary-color);
+
+    &:hover {
+      @include transform(rotate(-20deg));
+    }
+  }
+}
